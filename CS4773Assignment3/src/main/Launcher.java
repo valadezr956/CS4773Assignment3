@@ -12,7 +12,7 @@ public class Launcher {
         //Probably only  once instance of this
         SansDrawing drawing = new SansDrawing();
         
-        //Probably some kind of builder to perform a this below per command
+        //Probably some kind of builder to perform a this below per command, since it's going be similar per command
 	        Shape shape = new Circle(5);
 	        
 	        //Don't really like the create in the SansDrawing class feel it should be more of a command
