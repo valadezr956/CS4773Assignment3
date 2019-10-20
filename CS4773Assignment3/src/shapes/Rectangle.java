@@ -1,6 +1,6 @@
 package shapes;
 
-public class Rectangle extends Shapes {
+public class Rectangle extends Shape {
 	
 	private int width;
 	private int height;
@@ -9,9 +9,6 @@ public class Rectangle extends Shapes {
 	public Rectangle(int width, int height) {
 		this.width = width;
 		this.height = height;
-		this.xPosition = 0;
-		this.yPostiton = 0;
-		this.color = Color.RED;
 	}
 	
 	public void draw() {

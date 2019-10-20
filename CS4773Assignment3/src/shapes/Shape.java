@@ -1,6 +1,6 @@
 package shapes;
 
-public abstract class Shapes {
+public abstract class Shape {
 	
 	protected int xPosition;
 	protected int yPostiton;

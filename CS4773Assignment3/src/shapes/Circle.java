@@ -1,15 +1,12 @@
 package shapes;
 
-public class Circle extends Shapes {
+public class Circle extends Shape {
 	
 	private int radius;
 	
 	
 	public Circle(int radius) {
 		this.radius = radius;
-		this.color = Color.BLUE;
-		this.xPosition = 0;
-		this.yPostiton = 0;
 	}
 	
 	
