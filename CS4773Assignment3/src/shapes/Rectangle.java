@@ -12,7 +12,7 @@ public class Rectangle extends Shape {
 	}
 	
 	public void draw() {
-		String.format("Rectangle, Color: %s, Origin: (%d,%d), Width: %d, Height: %d", color, xPosition, yPostiton, width, height);
+		System.out.println(String.format("Rectangle, Color: %s, Origin: (%d,%d), Width: %d, Height: %d", color, xPosition, yPostiton, width, height));
 	}
 	
 	public void delete() {

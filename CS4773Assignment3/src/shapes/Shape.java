@@ -15,11 +15,13 @@ public abstract class Shape {
 	}
 	
 	public void color(String color) {
+		
 		try {
-			this.color = Color.valueOf(color);
+			this.color = Color.valueOf(color.toUpperCase());
 		}
 		catch(IllegalArgumentException e){
-			//TODO add Shapes exception class
+			//TODO add Shapes exception class or sansDrawing exception class
+			System.err.println("Error string Color to Color convertion");
 		}
 		
 	}

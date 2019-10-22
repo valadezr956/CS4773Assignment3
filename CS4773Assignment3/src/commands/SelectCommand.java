@@ -1,19 +1,22 @@
 package commands;
 
+import invoker.*;
 import shapes.*;
 
 public class SelectCommand extends Command {
 	
-	private int nShape;
+	private SansDrawing invoker;
+	private int iShape;
 	
-	public SelectCommand(int i) {
-		nShape = i;
+	public SelectCommand(SansDrawing sansDrawing, int iShape) {
+		invoker = sansDrawing;
+		this.iShape = iShape;
 	}
 	
 	
 	@Override
 	public void execute() {
-		// TODO somehow get the static SansDrawing.currentShape and set it new Shape		
+		invoker.currentShape = invoker.shapes.get(iShape - 1);		
 	}
 
 	@Override

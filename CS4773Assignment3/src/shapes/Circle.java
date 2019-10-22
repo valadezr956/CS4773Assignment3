@@ -11,7 +11,7 @@ public class Circle extends Shape {
 	
 	
 	public void draw() {
-		String.format("Circle, Color: %s, Origin: (%d,%d), Radius: %d", color, xPosition, yPostiton, radius);
+		System.out.println(String.format("Circle, Color: %s, Origin: (%d,%d), Radius: %d", color, xPosition, yPostiton, radius));
 	}
 	
 	public void delete() {
